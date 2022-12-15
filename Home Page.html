@@ -64,10 +64,13 @@
         display: flex;
         padding: 10px 50px;
         justify-content: space-around;
-    }
-
-    #linknav {
         font-size: 15px;
+    }
+    #linknav div:hover{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color:darkslategray;
+        color:white;
+        cursor: pointer;
     }
 
     #offernav {
@@ -164,7 +167,7 @@
         </div>
 
         <div id="heading">
-            <h1>SkinStore</h1>
+            <a style="text-decoration: none;color: black;" href="Home Page.html"><h1 style="font-family:'Courier New', Courier, monospace;">SkinStore</h1></a>
         </div>
 
         <div id="profile">
@@ -213,7 +216,7 @@
             <h3>Build a Routine</h3>
         </div>
         <div>
-            <h3>Blog</h3>
+            <h3><a style="text-decoration:none;" href="blog.html">Blog</a></h3>
         </div>
     </nav>
     <nav id="offernav">
