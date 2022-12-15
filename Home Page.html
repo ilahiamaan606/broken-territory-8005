@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #topnav {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        padding: 15px 0px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    #menu {
+        margin: 0px 30px;
+    }
+
+    #menu div {
+        width: 25px;
+        height: 4px;
+        background-color: black;
+        margin: 5px 0;
+    }
+
+    #search {
+        height: 90%;
+        margin-left: 20px;
+    }
+
+    #search img {
+        height: 100%;
+    }
+
+    #heading {
+        line-height: 0px;
+        margin: auto;
+        font-size: 40px;
+    }
+
+    #profile {
+        height: 90%;
+        margin-right: 20px;
+    }
+
+    #profile img {
+        height: 100%;
+    }
+
+    #cart {
+        height: 90%;
+        margin: 0px 30px
+    }
+
+    #cart img {
+        height: 100%;
+    }
+
+    #linknav {
+        display: flex;
+        padding: 10px 50px;
+        justify-content: space-around;
+    }
+
+    #linknav {
+        font-size: 15px;
+    }
+
+    #offernav {
+        display: flex;
+        padding: 0px 100px;
+        justify-content: space-around;
+        background-color: antiquewhite;
+        margin: 10px 0px;
+
+    }
+
+    #shopnow {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(40, 53, 53);
+        color: white;
+
+    }
+
+    #slideshow img {
+        display: none;
+        width: 70%;
+        margin: auto;
+        margin-top: 10px;
+        height: 500px;
+    }
+
+    #category {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 10px;
+    }
+
+    /* #category div{
+
+    } */
+    #category img {
+        width: 100%;
+    }
+
+    #connect {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #connect div {
+        width: 80%;
+        margin: auto;
+        margin-left: 45px;
+    }
+
+    #connect img {
+        width: 50%;
+    }
+
+    #connect h3 {
+        margin-bottom: 6px;
+        margin-left: 5%;
+        line-height: 0px;
+    }
+    #help{
+        display: flex;
+        justify-content:space-around;
+        margin-bottom: 50px;
+    }
+    #help div{
+        width:15%;
+    }
+    #last{
+        display: flex;
+        width: 95%;
+        margin: auto;
+    }
+    #last div{
+        width:50%;
+    }
+    #last img{
+        width: 70%;
+    }
+</style>
+
+<body>
+    <nav id="topnav">
+        <div id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="search">
+            <img src="https://pics.freeicons.io/uploads/icons/png/4649228851548336252-512.png" alt="">
+        </div>
+
+        <div id="heading">
+            <h1>SkinStore</h1>
+        </div>
+
+        <div id="profile">
+            <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="">
+        </div>
+
+        <div id="cart">
+            <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="">
+        </div>
+    </nav>
+    <nav id="linknav">
+        <div>
+            <h3>Brands</h3>
+        </div>
+        <div>
+            <h3>Holiday Gifts</h3>
+        </div>
+        <div>
+            <h3>Sale</h3>
+        </div>
+        <div>
+            <h3>SkinCare</h3>
+        </div>
+        <div>
+            <h3>Hair</h3>
+        </div>
+        <div>
+            <h3>MakeUp</h3>
+        </div>
+        <div>
+            <h3>Bath&Body</h3>
+        </div>
+        <div>
+            <h3>Fragrance</h3>
+        </div>
+        <div>
+            <h3>Self-Care</h3>
+        </div>
+        <div>
+            <h3>Tools</h3>
+        </div>
+        <div>
+            <h3>New&Trending</h3>
+        </div>
+        <div>
+            <h3>Build a Routine</h3>
+        </div>
+        <div>
+            <h3>Blog</h3>
+        </div>
+    </nav>
+    <nav id="offernav">
+        <div>
+            <h3>FREE US Shipping Over $49</h3>
+        </div>
+        <div>
+            <h3>Refer a Friend, Get $15</h3>
+        </div>
+        <div>
+            <h3>New Customers Save 20% - Use Code NEWBIE</h3>
+        </div>
+        <div>
+            <h3>Download Our App</h3>
+        </div>
+    </nav>
+    <nav id="shopnow">
+        <h2>25% off with code REPLAY + free Holiday Beauty Bag (worth $170) @ $150+ | SHOP NOW ></h2>
+    </nav>
+    <div id="slideshow">
+        <img src="https://static.thcdn.com/images/medium/webp/widgets/121-us/33/original-1207-STDCRE-44662-SS-MH-Beauty-Bag-Amend-580x384-V1-050233.jpg"
+            alt="">
+        <img src="https://static.thcdn.com/images/medium/webp/widgets/121-us/50/original-1130-STDCRE-44452-SS-MH-Q4-Photography-December-THG0035165-Batching-And-Artwork-P2-Shot-2-580x384.jpeg-050550.jpg"
+            alt="">
+        <img src="https://static.thcdn.com/images/medium/webp/widgets/121-us/04/New_Project_%287%29-090104.jpg" alt="">
+        <img src="https://static.thcdn.com/images/medium/webp/widgets/121-us/00/original-Shot6-580x384-095500.jpeg"
+            alt="">
+    </div>
+    <div style="text-align:center;width:500px;margin:auto;font-size: 20px; margin-top: 20px;margin-bottom: 20px; ">
+        <h1>Shop by Category</h1>
+    </div>
+    <div id="category">
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/04/round_widget_ss_homepage_-_Untitled_Page-062904.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/06/round_widget_ss_homepage_-_Untitled_Page_%281%29-062906.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/26/round_widget_ss_homepage_-_Untitled_Page_%282%29-062926.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/04/round_widget_ss_homepage_-_Untitled_Page-062904.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/06/round_widget_ss_homepage_-_Untitled_Page_%281%29-062906.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/26/round_widget_ss_homepage_-_Untitled_Page_%282%29-062926.png"
+                alt="">
+        </div>
+    </div>
+    <div style="width:90%;margin: auto; margin-top: 30px;">
+        <img style="width:100%"
+            src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/33/Skinstore_August_Referral_-_Untitled_Page_%281%29-022033.png"
+            alt="">
+    </div>
+    <div style="width:90%;margin: auto; height:200px; margin-top: 20px; margin-bottom: 60px;">
+        <img style="width:100%;height:100%;"
+            src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/32/original-0308-STDCRE32346-SS-AH-SkinStore-Concierge-Banners-1180x200-084632.jpg"
+            alt="">
+    </div>
+    <hr style="height:1px; background-color:black">
+    <div id="connect">
+        <div>
+            <p>Sign up to our email list and receive 20% off your next order</p>
+            <button style="background-color:rgb(49, 48, 48);color:white; height: 45px;">SIGN UP</button>
+        </div>
+        <div>
+            <h3>Connect with us</h3>
+            <img src="https://thumbs.dreamstime.com/b/set-facebook-twitter-instagram-youtube-icons-social-media-realistic-illustration-196204583.jpg"
+                alt="">
+        </div>
+
+    </div>
+    <div id="help">
+        <div style="margin-left:20px;width: 40%;">
+            <hr style="height:1px; background-color:black">
+            <h3>Help & Information</h3>
+            <p>Customer Service</p>
+            <p>Delivery Information</p>
+            <p>Returns & Refunds</p>
+            <p>Help Center</p>
+            <p>Track my order</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <hr style="height:1px; background-color:black">
+            <h3>About SkinStore</h3>
+            <p>Key Workers Discount</p>
+            <p>About Us</p>
+            <p>Affiliate Program</p>
+            <p>Brand Directory</p>
+            <p>Coupon Codes</p>
+            <p>Refer A Friend</p>
+            <p>Student Discount</p>
+            <p>Join SkinStore Experts</p>
+        </div>
+        <div>
+            <hr style="height:1px; background-color:black">
+            <h3>Legal</h3>
+            <p>Cookie Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Modern Slavery Statement</p>
+        </div>
+        <div>
+            <hr style="height:1px; background-color:black">
+            <h3>How To Contact Us</h3>
+            <p>Message Us</p>
+            <p>Free Beauty Consultations</p>
+        </div>
+    </div>
+    <hr style="height:1px; background-color:black">
+    <div id="last">
+        <div>
+            <h1>THG</h1>
+            <p>2022 © The Hut.com Ltd.</p>
+        </div>
+        <div>
+            <h3>Pay securely with</h3>
+            <img src="https://thumbs.dreamstime.com/b/online-payment-methods-button-set-company-logos-visa-mastercard-paypal-american-express-bitcoin-amazon-pay-apple-pay-google%E2%80%A6-236948070.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let arr = document.querySelectorAll("#slideshow img");
+
+    let i = 1;
+
+    arr[i].style.display = 'block';
+    setInterval(function () {
+        arr.forEach((img) => {
+            img.style.display = "none";
+        })
+
+        arr[i].style.display = 'block';
+        i++;
+        if (i == 4) {
+            i = 0;
+        }
+    }, 3000);
+
+</script>
