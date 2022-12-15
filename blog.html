@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #topnav {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 15px 0px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        #menu {
+            margin: 0px 30px;
+        }
+
+        #menu div {
+            width: 25px;
+            height: 4px;
+            background-color: black;
+            margin: 5px 0;
+        }
+
+        #search {
+            height: 90%;
+            margin-left: 20px;
+        }
+
+        #search img {
+            height: 100%;
+        }
+
+        #heading {
+            line-height: 0px;
+            margin: auto;
+            font-size: 40px;
+
+        }
+
+        #profile {
+            height: 90%;
+            margin-right: 20px;
+        }
+
+        #profile img {
+            height: 100%;
+        }
+
+        #cart {
+            height: 90%;
+            margin: 0px 30px
+        }
+
+        #cart img {
+            height: 100%;
+        }
+
+        #linknav {
+            display: flex;
+            padding: 0px 50px 0px 50px;
+            justify-content: space-around;
+            font-size: 15px;
+        }
+
+        #linknav div:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background-color: darkslategray;
+            color: white;
+        }
+
+        #offernav {
+            display: flex;
+            padding: 0px 100px;
+            justify-content: space-around;
+            background-color: antiquewhite;
+        }
+
+        #latest {
+            display: flex;
+            padding: 0px 20%;
+            justify-content: space-around;
+            font-size: 14px;
+            background-color: darkslategrey;
+            color: white;
+        }
+
+        #latest div:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background-color: white;
+            color: black;
+        }
+
+        #fragrance {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+
+        #fragrance div {
+            margin: 0px 20px;
+        }
+
+        #fragrance img {
+            width: 110%;
+            height: 100%;
+        }
+
+        #three {
+            display: flex;
+            width: 88%;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        #three div {
+            width: 100%;
+            margin: 0px 10px;
+        }
+
+        #three img {
+            width: 100%;
+            height: 50%;
+        }
+
+        #editor {
+            display: flex;
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #editor div {
+            margin: auto;
+        }
+
+        #editor img {
+            border-radius: 50%;
+        }
+        #connect {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #connect div {
+        width: 80%;
+        margin: auto;
+        margin-left: 45px;
+    }
+
+    #connect img {
+        width: 50%;
+    }
+
+    #connect h3 {
+        margin-bottom: 6px;
+        margin-left: 5%;
+        line-height: 0px;
+    }
+    #help{
+        display: flex;
+        justify-content:space-around;
+        margin-bottom: 50px;
+    }
+    #help div{
+        width:15%;
+    }
+    #last{
+        display: flex;
+        width: 95%;
+        margin: auto;
+    }
+    #last div{
+        width:50%;
+    }
+    #last img{
+        width: 70%;
+    }
+    </style>
+</head>
+
+<body>
+    <nav id="topnav">
+        <div id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="search">
+            <img src="https://pics.freeicons.io/uploads/icons/png/4649228851548336252-512.png" alt="">
+        </div>
+
+        <div id="heading">
+            <a style="text-decoration: none;color: black;" href="Home Page.html">
+                <h1 style="font-family:'Courier New', Courier, monospace;">SkinStore</h1>
+            </a>
+        </div>
+
+        <div id="profile">
+            <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="">
+        </div>
+
+        <div id="cart">
+            <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="">
+        </div>
+    </nav>
+
+    <nav id="linknav">
+        <div>
+            <h3>Brands</h3>
+        </div>
+        <div>
+            <h3>Holiday Gifts</h3>
+        </div>
+        <div>
+            <h3>Sale</h3>
+        </div>
+        <div>
+            <h3>SkinCare</h3>
+        </div>
+        <div>
+            <h3>Hair</h3>
+        </div>
+        <div>
+            <h3>MakeUp</h3>
+        </div>
+        <div>
+            <h3>Bath&Body</h3>
+        </div>
+        <div>
+            <h3>Fragrance</h3>
+        </div>
+        <div>
+            <h3>Self-Care</h3>
+        </div>
+        <div>
+            <h3>Tools</h3>
+        </div>
+        <div>
+            <h3>New&Trending</h3>
+        </div>
+        <div>
+            <h3>Build a Routine</h3>
+        </div>
+        <div>
+            <h3><a style="text-decoration: inherit;" href="blog.html">Blog</a></h3>
+        </div>
+    </nav>
+
+    <nav id="offernav">
+        <div>
+            <h3>FREE US Shipping Over $49</h3>
+        </div>
+        <div>
+            <h3>Refer a Friend, Get $15</h3>
+        </div>
+        <div>
+            <h3>New Customers Save 20% - Use Code NEWBIE</h3>
+        </div>
+        <div>
+            <h3>Download Our App</h3>
+        </div>
+    </nav>
+
+    <nav id="latest">
+        <div>
+            <h3>LATEST</h3>
+        </div>
+        <div>
+            <h3>SKINCARE</h3>
+        </div>
+        <div>
+            <h3>MAKE-UP</h3>
+        </div>
+        <div>
+            <h3>HAIRCARE</h3>
+        </div>
+        <div>
+            <h3>BODY</h3>
+        </div>
+        <div>
+            <h3>TIPS & ADVICE</h3>
+        </div>
+        <div>
+            <h3>BEAUTY CENTER</h3>
+        </div>
+    </nav>
+
+    <div id="fragrance">
+        <div style="width:50%;margin-top: 70px;">
+            <h2>FRAGRANCE</h2>
+            <p style="font-size:45px;">12 Gifts Any Fragrance Lover Needs on Their Wish List</p>
+            <p>14 days ago • By Lily Wohlner</p>
+        </div>
+        <div style="width:80%; height:500px">
+            <img src="https://blogscdn.thehut.net/app/uploads/sites/36/2022/11/My-project-1-1_1669834598.png" alt="">
+        </div>
+    </div>
+
+    <div id="three">
+        <div>
+            <img src="https://blogscdn.thehut.net/app/uploads/sites/36/2022/09/romina-farias-B5LZDN_t_fc-unsplash-1_1664390380.jpg"
+                alt="">
+            <p>BODY</p>
+            <p style="font-size: 25px;">The Best-Scented Body Oils, Creams & Scrubs</p>
+            <p>3 months ago • By Lily Wohlner</p>
+        </div>
+        <div>
+            <img src="https://blogscdn.thehut.net/app/uploads/sites/36/2020/12/MicrosoftTeams-image-12_1668708536.jpg"
+                alt="">
+            <p>FRAGRANCE</p>
+            <p style="font-size: 25px;">Discover SkinStore's Luxury Fragrance Brands</p>
+            <p>a month ago • By Lily Wohlner</p>
+        </div>
+        <div>
+            <img src="https://blogscdn.thehut.net/app/uploads/sites/36/2022/10/MicrosoftTeams-image-39_1665689278-392x392.jpg"
+                alt="">
+            <p>SKINCARE</p>
+            <p style="font-size: 25px;">An Exclusive Peek into Our Holiday Edit Box</p>
+            <p>2 months ago • By Lily Wohlner</p>
+        </div>
+    </div>
+    <hr style="background-color:black; height:2px; width:85%">
+    <h2
+        style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;margin-top: 100px;">
+        OUR EDITORS</h2>
+    <hr style="background-color:black; height:2px; width:8%">
+
+    <div id="editor">
+        <div>
+            <img src="https://secure.gravatar.com/avatar/750cec2034595edef72687faa9489d76?s=150&d=mm&r=g" alt="">
+            <h2
+                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                Schane Flowers</h2>
+            <p
+                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                Beauty Editor</p>
+        </div>
+        <div>
+            <img src="https://blogscdn.thehut.net/app/uploads/sites/36/2020/06/melynda-barham-post_1593099270-150x150.jpg"
+                alt="">
+            <h2
+                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                Melinda Berham</h2>
+            <p
+                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                Writer & Expert</p>
+        </div>
+        <div>
+            <img src="https://blogscdn.thehut.net/app/uploads/sites/36/2020/06/shelby-gerson-img_1593099237-150x150.jpg"
+                alt="">
+            <h2
+                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                Shelby Gerson</h2>
+            <p
+                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                Writer & Expert</p>
+        </div>
+    </div>
+    <div style="width:60%;margin: auto;margin-top: 100px;">
+        <img style="width: 100%;"
+            src="https://blogscdn.thehut.net/app/uploads/sites/36/2022/12/My-project-5_1670436162.png" alt="">
+        <p>TIPS & ADVICE</p>
+        <p style="font-size: 25px;">SkinStore’s Black Friday Replay Sale Is Here to Help You Re-Live Your Beauty Dreams</p>
+        <p>6 days ago • By Lily Wohlner</p>
+    </div>
+    <div style="width:60%;margin: auto;margin-top: 100px;">
+        <img style="width: 100%;height: 400px;"
+            src="https://blogscdn.thehut.net/app/uploads/sites/36/2022/11/MicrosoftTeams-image-7_1668641862.jpg" alt="">
+        <p>EVENTS</p>
+        <p style="font-size: 25px;">30 Products to Shop During SkinStore’s Black Friday Sale</p>
+        <p>a month ago • By Lily Wohlner</p>
+    </div>
+    <button style="background-color:black;color:white;display: block; margin: auto;border-radius: 50%;"><h3>Show More</h3></button>
+    <hr style="height:1px; background-color:black; margin-top: 100px;">
+    <div id="connect">
+        <div>
+            <p>Sign up to our email list and receive 20% off your next order</p>
+            <button style="background-color:rgb(49, 48, 48);color:white; height: 45px;">SIGN UP</button>
+        </div>
+        <div>
+            <h3>Connect with us</h3>
+            <img src="https://thumbs.dreamstime.com/b/set-facebook-twitter-instagram-youtube-icons-social-media-realistic-illustration-196204583.jpg"
+                alt="">
+        </div>
+
+    </div>
+    <div id="help">
+        <div style="margin-left:20px;width: 40%;">
+            <hr style="height:1px; background-color:black">
+            <h3>Help & Information</h3>
+            <p>Customer Service</p>
+            <p>Delivery Information</p>
+            <p>Returns & Refunds</p>
+            <p>Help Center</p>
+            <p>Track my order</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <hr style="height:1px; background-color:black">
+            <h3>About SkinStore</h3>
+            <p>Key Workers Discount</p>
+            <p>About Us</p>
+            <p>Affiliate Program</p>
+            <p>Brand Directory</p>
+            <p>Coupon Codes</p>
+            <p>Refer A Friend</p>
+            <p>Student Discount</p>
+            <p>Join SkinStore Experts</p>
+        </div>
+        <div>
+            <hr style="height:1px; background-color:black">
+            <h3>Legal</h3>
+            <p>Cookie Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Modern Slavery Statement</p>
+        </div>
+        <div>
+            <hr style="height:1px; background-color:black">
+            <h3>How To Contact Us</h3>
+            <p>Message Us</p>
+            <p>Free Beauty Consultations</p>
+        </div>
+    </div>
+    <hr style="height:1px; background-color:black">
+    <div id="last">
+        <div>
+            <h1>THG</h1>
+            <p>2022 © The Hut.com Ltd.</p>
+        </div>
+        <div>
+            <h3>Pay securely with</h3>
+            <img src="https://thumbs.dreamstime.com/b/online-payment-methods-button-set-company-logos-visa-mastercard-paypal-american-express-bitcoin-amazon-pay-apple-pay-google%E2%80%A6-236948070.jpg" alt="">
+        </div>
+    </div>
+    	
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
