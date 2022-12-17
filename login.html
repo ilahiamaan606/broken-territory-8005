@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #topnav {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 15px 0px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        #heading {
+            line-height: 0px;
+            margin: auto;
+            font-size: 40px;
+        }
+
+        #login {
+            background-color: gainsboro;
+            height: 1100px;
+            border: white solid 3px;
+        }
+
+        #login div {
+            background-color: white;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            padding: 40px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #login button {
+            background-color: rgb(49, 48, 48);
+            color: white;
+            height: 45px;
+            width: 100%;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        #login button:hover {
+            background-color: aqua;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="topnav">
+
+        <div id="heading">
+            <a style="text-decoration: none;color: black;" href="Home Page.html">
+                <h1 style="font-family:'Courier New', Courier, monospace;">SkinStore</h1>
+            </a>
+        </div>
+
+    </nav>
+
+    <div id="login">
+        <div>
+            <h2 style="font-family: Lato, sans-serif;font-size:25px;margin-bottom: 50px;">For Existing Customers</h2>
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">* Email address</p>
+            <input id="loginemail" type="email" style="height:40px; width:300px">
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">*Password</p>
+            <input id="loginpass" type="password" style="height:40px; width:300px">
+            <p
+                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: underline;margin-top: 50px;">
+                FORGOTTEN YOUR PASSWORD?</p>
+            <button id="abc">LOGIN</button>
+        </div>
+        <div>
+            <h2 style="font-family: Lato, sans-serif;font-size:25px;margin-bottom: 50px;">For New Customers</h2>
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Set New Email address
+            </p>
+            <input id="regemail" type="email" style="height:40px; width:300px">
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Set New Password</p>
+            <input id="regpass" type="password" style="height:40px; width:300px">
+            <button id="qwe">REGISTER</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let mylogin = document.getElementById("abc");
+    let register = document.getElementById("qwe");
+    let mydata = JSON.parse(localStorage.getItem("hi"));
+
+    mylogin.addEventListener("click", () => {
+        if (loginemail.value == mydata.entered_email && loginpass.value == mydata.entered_password) {
+            alert("Login Successfull")
+        }
+        else {
+            alert("Entered Credentials are Wrong")
+        }
+        loginemail.value = null;
+        loginpass.value = null;
+    })
+    register.addEventListener("click", () => {
+        data = {
+            entered_email: regemail.value,
+            entered_password: regpass.value
+        }
+        localStorage.setItem("hi", JSON.stringify(data));
+        if(regemail.value == "" || regpass.value == ""){
+            alert("Please Enter The Required Information")
+        }
+        else{alert("Registered Successfull")}
+        regemail.value = null;
+        regpass.value = null;
+    })
+
+</script>
