@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #topnav {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 15px 0px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        #heading {
+            line-height: 0px;
+            margin: auto;
+            font-size: 40px;
+        }
+
+        #profile {
+            height: 90%;
+            margin-right: 20px;
+        }
+
+        #profile img {
+            height: 100%;
+        }
+
+        #carting {
+            height: 90%;
+            margin: 0px 30px
+        }
+
+        #carting img {
+            height: 100%;
+        }
+
+        #linknav {
+            display: flex;
+            padding: 10px 50px;
+            justify-content: space-around;
+            font-size: 15px;
+        }
+
+        #linknav div:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background-color: darkslategray;
+            color: white;
+            cursor: pointer;
+        }
+
+        #offernav {
+            display: flex;
+            padding: 0px 100px;
+            justify-content: space-around;
+            background-color: antiquewhite;
+            margin: 10px 0px;
+
+        }
+
+        #shopnow {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(40, 53, 53);
+            color: white;
+
+        }
+
+        #container {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            align-content: center;
+        }
+
+        #container div {
+            margin: 20px;
+            width: 20%;
+            margin: auto;
+        }
+
+        #container img {
+            width: 100%;
+        }
+
+        #container button {
+            background-color: rgb(49, 48, 48);
+            color: white;
+            height: 45px;
+            width: 50px;
+            font-size: 15px;
+        }
+
+        #container span {
+            font-size: 25px;
+            margin: 0px 10px;
+        }
+
+        #total {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #total button {
+            background-color: rgb(49, 48, 48);
+            color: white;
+            height: 45px;
+            width: 100px;
+            font-size: 15px;
+        }
+
+        #total button:hover {
+            background-color: aqua;
+            color: black;
+            cursor: pointer;
+        }
+
+        #connect {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #connect div {
+            width: 80%;
+            margin: auto;
+            margin-left: 45px;
+        }
+
+        #connect img {
+            width: 50%;
+        }
+
+        #connect h3 {
+            margin-bottom: 6px;
+            margin-left: 5%;
+            line-height: 0px;
+        }
+
+        #help {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+
+        #help div {
+            width: 15%;
+        }
+
+        #last {
+            display: flex;
+            width: 95%;
+            margin: auto;
+        }
+
+        #last div {
+            width: 50%;
+        }
+
+        #last img {
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="topnav">
+        <div id="heading">
+            <a style="text-decoration: none;color: black;" href="Home Page.html">
+                <h1 style="font-family:'Courier New', Courier, monospace;">SkinStore</h1>
+            </a>
+        </div>
+
+        <div id="profile">
+            <a href="login.html"><img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt=""></a>
+        </div>
+
+        <div id="carting">
+            <a href="cart.html"><img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></a>
+        </div>
+    </nav>
+    <nav id="linknav">
+        <div>
+            <h3>Brands</h3>
+        </div>
+        <div>
+            <h3>Holiday Gifts</h3>
+        </div>
+        <div>
+            <h3>Sale</h3>
+        </div>
+        <div>
+            <h3>SkinCare</h3>
+        </div>
+        <div>
+            <h3>Hair</h3>
+        </div>
+        <div>
+            <h3>MakeUp</h3>
+        </div>
+        <div>
+            <h3>Bath&Body</h3>
+        </div>
+        <div>
+            <h3>Fragrance</h3>
+        </div>
+        <div>
+            <h3>Self-Care</h3>
+        </div>
+        <div>
+            <h3>Tools</h3>
+        </div>
+        <div>
+            <h3>New&Trending</h3>
+        </div>
+        <div>
+            <h3>Build a Routine</h3>
+        </div>
+        <div>
+            <h3><a style="text-decoration:none;color: black;" href="blog.html">Blog</a></h3>
+        </div>
+    </nav>
+    <nav id="offernav">
+        <div>
+            <h3>FREE US Shipping Over $49</h3>
+        </div>
+        <div>
+            <h3>Refer a Friend, Get $15</h3>
+        </div>
+        <div>
+            <h3>New Customers Save 20% - Use Code NEWBIE</h3>
+        </div>
+        <div>
+            <h3>Download Our App</h3>
+        </div>
+    </nav>
+    <nav id="shopnow">
+        <h2>25% off with code REPLAY + free Holiday Beauty Bag (worth $170) @ $150+ | SHOP NOW ></h2>
+    </nav>
+
+    <div style="width:90%;margin:auto;margin-top: 100px;">
+        <h1 style="font-family:Lato-Regular,Helvetica,Arial,sans-serif;font-size: 36px;">Your Cart</h1>
+    </div>
+
+    <div id="container">
+
+    </div>
+
+    <hr style="background-color:black;height:3px;margin-top:70px">
+
+    <div id="total">
+        <h2>Your Total Cart Value:<span id="value"></span></h2>
+        <button>Checkout</button>
+    </div>
+    <hr style="height:1px; background-color:black">
+    <div id="connect">
+        <div>
+            <p>Sign up to our email list and receive 20% off your next order</p>
+            <button style="background-color:rgb(49, 48, 48);color:white; height: 45px;">SIGN UP</button>
+        </div>
+        <div>
+            <h3>Connect with us</h3>
+            <img src="https://thumbs.dreamstime.com/b/set-facebook-twitter-instagram-youtube-icons-social-media-realistic-illustration-196204583.jpg"
+                alt="">
+        </div>
+
+    </div>
+    <div id="help">
+        <div style="margin-left:20px;width: 40%;">
+            <hr style="height:1px; background-color:black">
+            <h3>Help & Information</h3>
+            <p>Customer Service</p>
+            <p>Delivery Information</p>
+            <p>Returns & Refunds</p>
+            <p>Help Center</p>
+            <p>Track my order</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <hr style="height:1px; background-color:black">
+            <h3>About SkinStore</h3>
+            <p>Key Workers Discount</p>
+            <p>About Us</p>
+            <p>Affiliate Program</p>
+            <p>Brand Directory</p>
+            <p>Coupon Codes</p>
+            <p>Refer A Friend</p>
+            <p>Student Discount</p>
+            <p>Join SkinStore Experts</p>
+        </div>
+        <div>
+            <hr style="height:1px; background-color:black">
+            <h3>Legal</h3>
+            <p>Cookie Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Modern Slavery Statement</p>
+        </div>
+        <div>
+            <hr style="height:1px; background-color:black">
+            <h3>How To Contact Us</h3>
+            <p>Message Us</p>
+            <p>Free Beauty Consultations</p>
+        </div>
+    </div>
+    <hr style="height:1px; background-color:black">
+    <div id="last">
+        <div>
+            <h1>THG</h1>
+            <p>2022 © The Hut.com Ltd.</p>
+        </div>
+        <div>
+            <h3>Pay securely with</h3>
+            <img src="https://thumbs.dreamstime.com/b/online-payment-methods-button-set-company-logos-visa-mastercard-paypal-american-express-bitcoin-amazon-pay-apple-pay-google%E2%80%A6-236948070.jpg"
+                alt="">
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let container = document.getElementById("container");
+    let sum = 0;
+    mydata = JSON.parse(localStorage.getItem("data"));
+    iop();
+
+    function iop() {
+
+        container.innerHTML = null;
+        mydata.forEach((element, index) => {
+            sum += Number(element.price)
+            let div = document.createElement("div");
+            var value = document.getElementById("value");
+            value.innerText = sum
+            let img = document.createElement("img");
+            img.setAttribute("src", element.img);
+
+            let name = document.createElement("h3");
+            name.innerText = element.name;
+
+            let price = document.createElement("h3");
+            price.innerText = element.price;
+
+            let minus = document.createElement("button");
+            minus.innerText = "-";
+            minus.addEventListener("click", () => {
+                if (quantity.innerText == 1) {
+                    mydata.splice(index, 1);
+                    localStorage.setItem("data", JSON.stringify(mydata));
+                    iop();
+                }
+                else { quantity.innerText--; };
+                sub_total.innerText = "Sub-Total:" + (element.price) * Number(quantity.innerText);
+                sum -= Number(element.price);
+                value.innerText = sum
+            })
+
+            var quantity = document.createElement("span");
+            quantity.innerText = 1;
+
+            let plus = document.createElement("button");
+            plus.innerText = "+";
+            plus.addEventListener("click", () => {
+                quantity.innerText++;
+                sub_total.innerText = "Sub-Total:" + (element.price) * (quantity.innerText);
+                sum += Number(element.price);
+                value.innerText = sum
+            })
+            var sub_total = document.createElement("h3");
+            sub_total.innerText = "Sub-Total:" + Number(element.price) * Number(quantity.innerText);
+
+            div.append(img, name, price, minus, quantity, plus, sub_total);
+            container.append(div);
+        });
+    }
+
+
+
+
+
+
+</script>
